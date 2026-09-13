@@ -1,31 +1,24 @@
 # Linear-and-combinatorial-optimization
 This repository contains the full theoretical resolution, graphical code implementations (Python / Matplotlib), and standard Simplex algorithms applied in 6 exercises
 
-## 📋 Table of Contents
-* [Overview](#overview)
-* [Exercises Summary](#exercises-summary)
-* [Tech Stack & Requirements](#tech-stack--requirements)
-* [File Structure](#file-structure)
-* [Installation & Execution](#installation--execution)
-
 ---
 
 ## ℹ️ Overview
 
-This project tackles standard optimization topics including linear programming formulation[cite: 13], graphical boundary visualization[cite: 3], convexity proofs, basic feasible solutions (BFS), geometric degeneracy, and Simplex table calculations.
+This project tackles standard optimization topics including linear programming formulation, graphical boundary visualization, convexity proofs, basic feasible solutions (BFS), geometric degeneracy, and Simplex table calculations.
 
 ---
 
 ## 📐 Exercises Summary
 
 ### **Exercise 1: Graphical Solution & Objective Sensitivity**
-* **Goal:** Plot constraints, solve the 2D LP graphically, and analyze objective slope sensitivity[cite: 1, 3].
-* **Constraints:** $6x_1 + 3x_2 \ge 12$, $4x_1 + 8x_2 \ge 16$, $6x_1 + 5x_2 \le 30$, $6x_1 + 7x_2 \le 36$, $x_1, x_2 \ge 0$[cite: 2, 3].
-* **Key Result:** Optimal solution at vertex **$(5, 0)$** with **$Z_{\max} = 15$** for $Z = 3x_1 + x_2$[cite: 7].
+* **Goal:** Plot constraints, solve the 2D LP graphically, and analyze objective slope sensitivity.
+* **Constraints:** $6x_1 + 3x_2 \ge 12$, $4x_1 + 8x_2 \ge 16$, $6x_1 + 5x_2 \le 30$, $6x_1 + 7x_2 \le 36$, $x_1, x_2 \ge 0$.
+* **Key Result:** Optimal solution at vertex **$(5, 0)$** with **$Z_{\max} = 15$** for $Z = 3x_1 + x_2$.
 
 ### **Exercise 2: Radiation Therapy Formulation & Minimization**
-* **Goal:** Formulate an LP minimizing healthy tissue exposure subject to tumor target constraints[cite: 13].
-* **Constraints:** $0.3x_1 + 0.1x_2 \le 2.7$, $0.5x_1 + 0.5x_2 = 6$, $0.6x_1 + 0.4x_2 \ge 12$ *(or equivalent bounds)*[cite: 13], $x_1, x_2 \ge 0$[cite: 13].
+* **Goal:** Formulate an LP minimizing healthy tissue exposure subject to tumor target constraints.
+* **Constraints:** $0.3x_1 + 0.1x_2 \le 2.7$, $0.5x_1 + 0.5x_2 = 6$, $0.6x_1 + 0.4x_2 \ge 12$, $x_1, x_2 \ge 0$.
 * **Key Result:** Optimal dose setting at vertex **$(7.5, 4.5)$** with **$Z_{\min} = 5.25$**.
 
 ### **Exercise 3: Animal Feed Blending Problem**
@@ -50,17 +43,16 @@ This project tackles standard optimization topics including linear programming f
 
 ## 🛠️ Tech Stack & Requirements
 
-* **Language:** Python 3.x[cite: 1]
+* **Language:** Python 3.x
 * **Core Libraries:**
-  * `numpy` (System solving & matrix manipulation)[cite: 1]
-  * `matplotlib` (Feasible region plotting & objective line sweeps)[cite: 1, 3]
+  * `numpy` (System solving & matrix manipulation)
+  * `matplotlib` (Feasible region plotting & objective line sweeps)
 
 ---
 
 ## 📁 File Structure
 
 ```text
-.
-├── report.pdf               # Full academic report (University of Patras)
-├── main.py                  # Consolidated Python scripts for Exercises 1-6
-└── README.md                # Project documentation
+├── report.pdf                  # Full academic report (University of Patras)
+├── code.ipynb                  # Consolidated Python scripts for Exercises 1-6 
+└── README.md                   # Project documentationissue exposure subject to tumor target constraints.
